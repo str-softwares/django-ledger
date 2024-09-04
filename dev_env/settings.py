@@ -10,23 +10,9 @@ if not SECRET_KEY:
     SECRET_KEY = 'djangoledger1234!DoNotUse!BadIdea!VeryInsecure!'
 DEBUG = True
 
-# ALLOWED_HOSTS = [
-#     '127.0.0.1',
-#     '192.168.1.102',
-#     'localhost',
-#     'adverse-claudetta-testing-deploy-08028765.koyeb.app'
-# ]
+ALLOWED_HOSTS = [*]
+CSRF_TRUSTED_ORIGINS = ['https://*.preview.app.github.dev','https://xeric-leonelle-testing-deploy-38d0f367.koyeb.app']
 
-ALLOWED_HOSTS = ['xeric-leonelle-testing-deploy-38d0f367.koyeb.app/','127.0.0.1']
-# CSRF_TRUSTED_ORIGINS=['*']
-CSRF_TRUSTED_ORIGINS = ['xeric-leonelle-testing-deploy-38d0f367.koyeb.app/']
-
-
-CORS_ALLOWED_ORIGINS = [
-    'xeric-leonelle-testing-deploy-38d0f367.koyeb.app',
-    '127.0.0.1'
-]
- 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,7 +21,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_ledger',
-    'dev_env',
 ]
 
 if DJANGO_LEDGER_GRAPHQL_SUPPORT_ENABLED:
