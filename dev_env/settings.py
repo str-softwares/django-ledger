@@ -17,12 +17,15 @@ DEBUG = True
 #     'adverse-claudetta-testing-deploy-08028765.koyeb.app'
 # ]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://then-tandi-testing-deploy-0ec16f68.koyeb.app']
 # CSRF_TRUSTED_ORIGINS=['*']
 CSRF_TRUSTED_ORIGINS = ['https://then-tandi-testing-deploy-0ec16f68.koyeb.app']
 
 
-CORS_ALLOW_ALL_ORIGINS = True  
+CORS_ALLOWED_ORIGINS = [
+    'https://then-tandi-testing-deploy-0ec16f68.koyeb.app',
+]
+ 
 INSTALLED_APPS = [
     'corsheaders',  
     'django.contrib.admin',
