@@ -10,7 +10,13 @@ if not SECRET_KEY:
     SECRET_KEY = 'djangoledger1234!DoNotUse!BadIdea!VeryInsecure!'
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.102', 'localhost']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    '192.168.1.102',
+    'localhost',
+    'adverse-claudetta-testing-deploy-08028765.koyeb.app'
+]
+
 CSRF_TRUSTED_ORIGINS = ['https://*.preview.app.github.dev']
 
 INSTALLED_APPS = [
