@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_ledger',
+    'dev_env',
 ]
 
 if DJANGO_LEDGER_GRAPHQL_SUPPORT_ENABLED:
