@@ -17,13 +17,14 @@ DEBUG = True
 #     'adverse-claudetta-testing-deploy-08028765.koyeb.app'
 # ]
 
-ALLOWED_HOSTS = ['https://xeric-leonelle-testing-deploy-38d0f367.koyeb.app/']
+ALLOWED_HOSTS = ['https://xeric-leonelle-testing-deploy-38d0f367.koyeb.app/','127.0.0.1']
 # CSRF_TRUSTED_ORIGINS=['*']
 CSRF_TRUSTED_ORIGINS = ['https://xeric-leonelle-testing-deploy-38d0f367.koyeb.app/']
 
 
 CORS_ALLOWED_ORIGINS = [
     'https://then-tandi-testing-deploy-0ec16f68.koyeb.app',
+    '127.0.0.1'
 ]
  
 INSTALLED_APPS = [

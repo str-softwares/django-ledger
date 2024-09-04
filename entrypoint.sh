@@ -21,7 +21,7 @@ def create_superuser():
         print('Superuser already exists')
 
 if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dev_env.settings')
     import django
     django.setup()
     create_superuser()
