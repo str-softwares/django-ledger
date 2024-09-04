@@ -19,10 +19,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # CSRF_TRUSTED_ORIGINS=['*']
-CSRF_TRUSTED_ORIGINS = [
-    'https://then-tandi-testing-deploy-0ec16f68.koyeb.app',
-]
-
+CSRF_TRUSTED_ORIGINS = ['https://then-tandi-testing-deploy-0ec16f68.koyeb.app']
 
 
 CORS_ALLOW_ALL_ORIGINS = True  
