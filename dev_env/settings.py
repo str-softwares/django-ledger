@@ -10,7 +10,7 @@ if not SECRET_KEY:
     SECRET_KEY = 'djangoledger1234!DoNotUse!BadIdea!VeryInsecure!'
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://*.preview.app.github.dev','https://xeric-leonelle-testing-deploy-38d0f367.koyeb.app']
 
 INSTALLED_APPS = [
